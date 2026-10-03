@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light dark;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #1f2328;
+  background: #f6f8fa;
+}
+
+main {
+  max-width: 560px;
+  padding: 24px;
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: start;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 4px;
+}
+
+strong,
+small {
+  display: block;
+}
+
+strong {
+  font-size: 14px;
+}
+
+small,
+#status {
+  color: #57606a;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+#status {
+  min-height: 18px;
+  margin: 16px 0 0;
+}

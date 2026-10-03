@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Dark/Light Mode Toggle",
+  "version": "1.0",
+  "description": "Toggle inversion globally or per page.",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Dark/Light Mode"
+  }
+}

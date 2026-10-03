@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd firefox
+web-ext build
+read -p "Key: " -s API_KEY
+read -p "Secret: " -s API_SECRET
+web-ext sign --channel=unlisted --api-key=$API_KEY --api-secret=$API_SECRET
+echo 'done'

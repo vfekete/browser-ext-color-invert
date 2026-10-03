@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="options.css">
+  <title>Dark/Light Mode Options</title>
+</head>
+<body>
+  <main>
+    <h1>Dark/Light Mode</h1>
+    <label class="row">
+      <input id="globalScope" type="checkbox">
+      <span>
+        <strong>Icon toggles all pages</strong>
+        <small>When enabled, toolbar clicks change the default state for every page. When disabled, toolbar clicks affect only the current page origin.</small>
+      </span>
+    </label>
+    <p id="status" aria-live="polite"></p>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>
